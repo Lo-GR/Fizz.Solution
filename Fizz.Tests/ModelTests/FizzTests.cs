@@ -15,5 +15,12 @@ namespace Fizz.Tests
             string[] testArray = FizzBuzz.GenerateFizzBuzz(testNumber);
             Assert.AreEqual("FizzBuzz", testArray[testNumber - 1]);
         }
+        [TestMethod]
+        public void GenereateFizzBuzz_FiveDivisibles_Buzz()
+        {
+            int testNumber = 5;
+            string[] testArray = FizzBuzz.GenerateFizzBuzz(testNumber);
+            Assert.AreEqual("Buzz", null);
+        }
     }
 }
