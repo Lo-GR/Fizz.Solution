@@ -11,13 +11,12 @@
 
 namespace Fizz
 {
-    class Program
+    public class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            FizzBuzz fizzBuzzInstance = new FizzBuzz();
             int testNumber = 100;
-            string[] fizzBuzzArray = fizzBuzzInstance.GenerateFizzBuzz(testNumber);
+            string[] fizzBuzzArray = FizzBuzz.GenerateFizzBuzz(testNumber);
             for (int i = 0; i < testNumber; i ++)
             {
                 Console.WriteLine(fizzBuzzArray[i]);

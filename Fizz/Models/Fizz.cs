@@ -5,9 +5,9 @@ using System;
 //int, non-negative int. 
 namespace Fizz
 {
-    class FizzBuzz
+    public class FizzBuzz
     {
-        public string[] GenerateFizzBuzz(int n)
+        public static string[] GenerateFizzBuzz(int n)
         {
             string[] fizzBuzzArray = new string[n];
             // for loop with i correlating with each integer between 0 and n;
