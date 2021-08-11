@@ -7,10 +7,13 @@ namespace Fizz.Tests
     [TestClass]
     public class FizzTests
     {
+
         [TestMethod]
         public void GenerateFizzBuzz_FifteenDivisibles_FizzBuzz()
         {
-            FizzBuzz.GenerateFizzBuzz(3);
+            int testNumber = 15;
+            string[] testArray = FizzBuzz.GenerateFizzBuzz(testNumber);
+            Assert.AreEqual("FizzBuzz", null);
         }
     }
 }
