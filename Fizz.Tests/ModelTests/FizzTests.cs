@@ -27,7 +27,7 @@ namespace Fizz.Tests
         {
             int testNumber = 3;
             string[] testArray = FizzBuzz.GenerateFizzBuzz(testNumber);
-            Assert.AreEqual("Fizz", null);
+            Assert.AreEqual("Fizz", testArray[testNumber - 1]);
         }
     }
 }
