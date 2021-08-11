@@ -13,7 +13,7 @@ namespace Fizz.Tests
         {
             int testNumber = 15;
             string[] testArray = FizzBuzz.GenerateFizzBuzz(testNumber);
-            Assert.AreEqual("FizzBuzz", null);
+            Assert.AreEqual("FizzBuzz", testArray[testNumber - 1]);
         }
     }
 }
