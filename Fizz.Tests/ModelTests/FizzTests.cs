@@ -20,7 +20,14 @@ namespace Fizz.Tests
         {
             int testNumber = 5;
             string[] testArray = FizzBuzz.GenerateFizzBuzz(testNumber);
-            Assert.AreEqual("Buzz", null);
+            Assert.AreEqual("Buzz", testArray[testNumber - 1]);
+        }
+        [TestMethod]
+        public void GenerateFizzBuzz_ThreeDivisibles_Fizz()
+        {
+            int testNumber = 3;
+            string[] testArray = FizzBuzz.GenerateFizzBuzz(testNumber);
+            Assert.AreEqual("Fizz", null);
         }
     }
 }
