@@ -1,8 +1,3 @@
-using System;
-
-//If number is divisble by 3 print Fizz ,
-//if number is divisible by 5 print buzz.
-//int, non-negative int. 
 namespace Fizz
 {
     public class FizzBuzz
@@ -10,7 +5,6 @@ namespace Fizz
         public static string[] GenerateFizzBuzz(int n, int fizz = 3, int buzz = 5)
         {
             string[] fizzBuzzArray = new string[n];
-            // for loop with i correlating with each integer between 0 and n;
             for (int i = 0; i < n; i++)
             {
                 int number = i + 1;
@@ -31,9 +25,6 @@ namespace Fizz
                     string parsedNumber = number.ToString();
                     fizzBuzzArray[i] = parsedNumber;
                 }
-                //check for integers that are divisible by 3
-                // check for integers that are divisible by 5
-                // if integers are divisible by 5 AND 3, print "FizzBuzz"
             }
             return fizzBuzzArray;
         }
