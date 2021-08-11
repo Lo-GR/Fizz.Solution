@@ -35,7 +35,7 @@ namespace Fizz.Tests
             int testNumber = 5;
             string[] arraySolution = { "1", "2", "Fizz", "4", "Buzz" };
             string[] testArray = FizzBuzz.GenerateFizzBuzz(5);
-            CollectionAssert.AreEqual(arraySolution, null);
+            CollectionAssert.AreEqual(arraySolution, testArray);
         }
     }
 }
