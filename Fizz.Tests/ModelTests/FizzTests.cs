@@ -34,7 +34,17 @@ namespace Fizz.Tests
         {
             int testNumber = 5;
             string[] arraySolution = { "1", "2", "Fizz", "4", "Buzz" };
-            string[] testArray = FizzBuzz.GenerateFizzBuzz(5);
+            string[] testArray = FizzBuzz.GenerateFizzBuzz(testNumber);
+            CollectionAssert.AreEqual(arraySolution, testArray);
+        }
+        [TestMethod]
+        public void GenerateFizzBuzz_Overload5and3_Array()
+        {
+            int arrayLength = 14;
+            int replaceFizz = 2;
+            int replaceBuzz = 7;
+            string[] arraySolution = { "1", "Fizz", "3", "Fizz", "5", "Fizz", "Buzz", "Fizz", "9", "Fizz", "11", "Fizz", "13", "FizzBuzz" };
+            string[] testArray = FizzBuzz.GenerateFizzBuzz(arrayLength, replaceFizz, replaceBuzz);
             CollectionAssert.AreEqual(arraySolution, testArray);
         }
     }
