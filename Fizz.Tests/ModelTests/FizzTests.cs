@@ -45,7 +45,7 @@ namespace Fizz.Tests
             int replaceBuzz = 7;
             string[] arraySolution = { "1", "Fizz", "3", "Fizz", "5", "Fizz", "Buzz", "Fizz", "9", "Fizz", "11", "Fizz", "13", "FizzBuzz" };
             string[] testArray = FizzBuzz.GenerateFizzBuzz(arrayLength, replaceFizz, replaceBuzz);
-            CollectionAssert.AreEqual(arraySolution, null);
+            CollectionAssert.AreEqual(arraySolution, testArray);
         }
     }
 }
