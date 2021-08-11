@@ -7,22 +7,22 @@ namespace Fizz
 {
     public class FizzBuzz
     {
-        public static string[] GenerateFizzBuzz(int n)
+        public static string[] GenerateFizzBuzz(int n, int fizz = 3, int buzz = 5)
         {
             string[] fizzBuzzArray = new string[n];
             // for loop with i correlating with each integer between 0 and n;
             for (int i = 0; i < n; i++)
             {
                 int number = i + 1;
-                if(number % 5 == 0 && number % 3 == 0)
+                if(number % buzz == 0 && number % fizz == 0)
                 {
                     fizzBuzzArray[i] = "FizzBuzz";
                 } 
-                else if (number % 3 == 0)
+                else if (number % fizz == 0)
                 {
                     fizzBuzzArray[i] = "Fizz";
                 }
-                else if (number % 5 == 0)
+                else if (number % buzz == 0)
                 {
                     fizzBuzzArray[i] = "Buzz";
                 }
